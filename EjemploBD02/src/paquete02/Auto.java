@@ -29,5 +29,13 @@ public class Auto {
         return valorMatricula;
     }
     
+    @Override
+    public String toString(){
+        String data = String.format("Placa del auto: %s\n"
+                + "Valor de la matricula del auto: %.2f\n", 
+                obtenerPlaca(), 
+                obtenerValorMatricula());
+        return data;
+    }
     
 }
